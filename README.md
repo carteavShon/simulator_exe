@@ -1,6 +1,6 @@
 # Carteav Simulator 2022 
 
-## To download the lates version Clone the project From [Shon's Branch](../../tree/shon_simulator.exe)(you'll need to to have GIT LFS install on your machine)
+### To download the lates version Clone the project From [Shon's Branch](../../tree/shon_simulator.exe)(you'll need to to have GIT LFS install on your machine)
  $ git clone --branch shon_simulator.exe https://github.com/Carteav/simulator_exe.git 
  
 ### Installing Git LFS
@@ -15,4 +15,4 @@ git lfs install
 and then clone as you normaly do 
 
 ### for the first Run its Best if you Start the simulator NOT from the Api , so that the maps and vichels Assets will be installed from the cloud.
-### inside the the simulator there is an updated Lgsvl_Scenarios folder . make sure you run the api from there   
+### inside the the simulator there is an updated Lgsvl_Scenarios folder. make sure you run the api from there   
