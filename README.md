@@ -14,5 +14,5 @@ git lfs install
 
 and then clone as you normaly do 
 
-# for the first Run its Best if you Start the simulator NOT from the Api , so that the maps and vichels Assets will be installed from the cloud.
-# inside the the simulator there is an updated Lgsvl_Scenarios folder . make sure you run the api from there   
+### for the first Run its Best if you Start the simulator NOT from the Api , so that the maps and vichels Assets will be installed from the cloud.
+### inside the the simulator there is an updated Lgsvl_Scenarios folder . make sure you run the api from there   
