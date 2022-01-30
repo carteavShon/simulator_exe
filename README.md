@@ -1,8 +1,8 @@
 # Carteav Simulator 2022 
 
 ### To download the lates version Clone the project From [Shon's Branch](../../tree/shon_simulator.exe)
-(you'll need to to have GIT LFS install on your machine)
- $ git clone --branch shon_simulator.exe https://github.com/Carteav/simulator_exe.git 
+### (you'll need to to have GIT LFS install on your machine)
+ ### $ git clone --branch shon_simulator.exe https://github.com/Carteav/simulator_exe.git 
  
 ### Installing Git LFS
 Git LFS requires Git version 1.8.2 or later to be installed.
