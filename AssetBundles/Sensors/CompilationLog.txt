@@ -1,0 +1,2 @@
+# Starting compiling MapSensor.dll
+/home/shon/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-688b988163c95ab61ad33af0b85f7e0a

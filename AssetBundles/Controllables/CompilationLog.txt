@@ -1,0 +1,2 @@
+# Starting compiling ParkBench.dll
+/home/shon/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-8e07f91711c2db7879a2ffa6d152dc21
