@@ -1,6 +1,6 @@
 # Carteav Simulator 2022 
 
-### To download the lates version Clone the project From [Shon's Branch](../../tree/shon_simulator.exe)
+### To download the lates version Clone the project 
 ### (you'll need to to have GIT LFS install on your machine)
  ### $ git clone --branch shon_simulator.exe https://github.com/Carteav/simulator_exe.git 
  
