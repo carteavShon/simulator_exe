@@ -3,3 +3,4 @@ simulator_Data/data.unity3d filter=lfs diff=lfs merge=lfs -text
 *.AssetBundles/ filter=lfs diff=lfs merge=lfs -text
 AssetBundles/Vehicles/ filter=lfs diff=lfs merge=lfs -text
 AssetBundles/Vehicles/vehicle_KartSim filter=lfs diff=lfs merge=lfs -text
+AssetBundles/Pedestrians/Walkers/ filter=lfs diff=lfs merge=lfs -text
