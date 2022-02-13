@@ -37,13 +37,27 @@ class map_types(Enum):
         SanFrancisco = "SanFrancisco"
         CubeTown = "CubeTown"
         SingleLaneRoad = "SingleLaneRoad"
-        EmptyMap = "df8f4b9b-16e6-47ed-810a-fac594ea4cc1" #"EmptyMap"
-        GanBIvrit = "df8f4b9b-16e6-47ed-810a-fac594ea4cc1" #"GanBIvrit"
+        EmptyMap = "df8f4b9b-16e6-47ed-810a-fac594ea4cc1"#"EmptyMap"
+        GanBIvrit = "4b6de6d5-4bd8-4905-a352-afb0f010d34e" #"GanBIvrit"
         CarteavVillage = "16a8f796-8b70-40e3-b77e-ff815bf7e891" #"CarteavVillage"
         # AutonomouStuff = "2aae5d39-a11c-4516-87c4-cdc9ca784551"
         # SanFrancisco = "5d272540-f689-4355-83c7-03bf11b6865f"
         # CubeTown = "06773677-1ce3-492f-9fe2-b3147e126e27"
-        # SingleLaneRoad = "a6e2d149-6a18-4b83-9029-4411d7b2e69a"        
+        # SingleLaneRoad = "a6e2d149-6a18-4b83-9029-4411d7b2e69a"  
+             
+class ganBivrit_spawn_cordinates(Enum):
+        parking1 ={"lon":34.8265818,"lat":31.9651178}
+        parking2 ={"lon":34.8260782,"lat":31.9656669}
+        lettersPuzzel = {"lon":34.8263164,"lat":31.9649525}
+        waterCircle = {"lon":34.8255831,"lon":31.9657457}
+        westGate = {"lon": 34.82465315,"lat":31.96559413}
+        westGate2 = {"lon": 34.82446041,"lat":31.96554187}
+        backRoad = {"lon": 34.82617902,"lat":31.96468383}
+        maze = {"lon": 34.8259694,"lat":31.9636530}
+        backEntrance = {"lon": 34.8258718,"lat":31.9634080}
+        playYard = {"lon":34.8267078,"lat":31.9636308}
+        playYardBack = {"lon":34.8268809,"lat":31.9633875}
+        GanSipurCoffee ={"lon":34.8267438,"lat":31.9640471}
 
 # class sensors_sets(Enum):
 #         AllSensors = "909be5bb-cfa4-43af-b1f6-5e8780d63382"
