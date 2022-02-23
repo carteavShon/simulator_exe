@@ -153,6 +153,7 @@ class ScenariosNode(Node):
             log_level = carteav_log.LogLevel.ERROR if self.drive_to_dest_result == EnumDriveToDestResult.FAILED else carteav_log.LogLevel.INFO
             print(self.drive_to_dest_result.name)
             carteav_log.publish_log(self, log_level, carteav_log.LogSubject.Simulator, self.drive_to_dest_result.name, self.scenario_name)
+            self.drive_to_dest_result = EnumDriveToDestResult.NONE
             return True
         return False
 

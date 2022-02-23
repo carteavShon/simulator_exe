@@ -46,8 +46,8 @@ class map_types(Enum):
         # SingleLaneRoad = "a6e2d149-6a18-4b83-9029-4411d7b2e69a"  
              
 class ganBivrit_spawn_cordinates(Enum):
-        parking1 ={"lon":34.8265818,"lat":31.9651178}
-        parking2 ={"lon":34.8260782,"lat":31.9656669}
+        parking1 = {"lon":34.8265818,"lat":31.9651178}
+        parking2 = {"lon":34.8260782,"lat":31.9656669}
         lettersPuzzel = {"lon":34.8263164,"lat":31.9649525}
         waterCircle = {"lon":34.8255831,"lon":31.9657457}
         westGate = {"lon": 34.82465315,"lat":31.96559413}

@@ -11,6 +11,8 @@ from permutation_params import PermutationParams
 import simulator_types
 from scenarios_ros_thread import ScenariosRosThread 
 
+cordinates = simulator_types.ganBivrit_spawn_cordinates
+
 scenario_num = 18
 scenario_name = "Walk In The Park"
 scene = simulator_types.map_types.GanBIvrit
@@ -73,6 +75,7 @@ print("Waiting For Connection ...")
 
 while not ego.bridge_connected:
     time.sleep(1)
+
 print("Bridge connected:", ego.bridge_connected)
 
 sim.add_random_agents(lgsvl.AgentType.PEDESTRIAN)
@@ -85,16 +88,48 @@ def on_collision(ego, ped, contact):
 
 sim.run(2)
 
+
+
+# Drive from Parking 1 to West Gate 
 ros_thread.send_drive_to_point(
     31.9651178,
     34.8265818,
-    31.96559413,
-    34.82465315
+    31.9656669,
+    34.8260782
 )
 
 while not ros_thread.scenarios_node.check_ended():
     sim.run(5)
 
+   
+
+print(" Drive from Parking 1 to West Gate ")
+# drive from West Gate to cafe Gan Sipur
+ros_thread.send_drive_to_point(
+    31.9656669,
+    34.8260782,
+    31.9640471,
+    34.8267438
+)
+
+print("Drive from West Gate to cafe Gan Sipur")
+print("Ros Thread ID:" + str(ros_thread.ros_thread_id))
+while not ros_thread.scenarios_node.check_ended():
+    sim.run(3)
+
+
+# drive from West Gate to cafe Gan Sipur
+ros_thread.send_drive_to_point(
+    31.9640471,
+    34.8267438,
+    31.9633875,
+    34.8268809
+)
+
+print("Drive from 'Gan Sipur' to 'Back Park Yard' ")
+
+while not ros_thread.scenarios_node.check_ended():
+    sim.run(3)
 
 sim.stop() 
 ros_thread.stop() 
