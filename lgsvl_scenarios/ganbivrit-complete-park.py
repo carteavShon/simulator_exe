@@ -67,8 +67,6 @@ right = lgsvl.utils.transform_to_right(ego_state)
 
 ego = sim.add_agent(vehicle.value,lgsvl.AgentType.EGO,ego_state)
 
-print("Bridge connected:", ego.bridge_connected)
-
 ego.connect_bridge(env.str("LGSVL_AUTOPILOT_0_HOST",lgsvl.wise.SimulatorSettings.bridge_host),env.int("LGSVL_AUTOPILOT_0_PORT",lgsvl.wise.SimulatorSettings.bridge_port))
 
 print("Waiting For Connection ...")
@@ -88,7 +86,7 @@ def on_collision(ego, ped, contact):
 
 sim.run(2)
 
-
+ego.on_collision(on_collision)
 
 # Drive from Parking 1 to West Gate 
 ros_thread.send_drive_to_point(

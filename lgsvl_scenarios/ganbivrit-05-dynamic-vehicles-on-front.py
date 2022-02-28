@@ -102,13 +102,6 @@ for loop_index in range(params.loop_count):
 
         npc = simulator_types.add_random_npc(sim, state)  
 
-        # if npc: 
-        #     npc.follow_closest_lane(True, speed)
-        #     return True
-        # else:
-        #     return False
-
-        # npc.on_waypoint_reached(on_waypoint)
         rotation = state_ego.transform.rotation.y - 180.0
         wp = [lgsvl.DriveWaypoint(position=state.position, speed=speed/2, angle=Vector(0.0,rotation,0.0)), 
                 lgsvl.DriveWaypoint(position=state.position - 80*forward - 1.2*right, speed=speed, angle=Vector(0.0,rotation,0.0))]
