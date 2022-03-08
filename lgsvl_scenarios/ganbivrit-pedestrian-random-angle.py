@@ -10,7 +10,9 @@ from permutation_params import PermutationParams
 import simulator_types
 from scenarios_ros_thread import ScenariosRosThread 
 from datetime import datetime
-import keyboard
+
+
+
 
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
