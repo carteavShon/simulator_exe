@@ -1,7 +1,7 @@
 import rclpy
 import _thread, time, threading
 import ament_index_python, sys
-from rosBag_scenerio import TrackingObjectsNode
+from tracking_node import TrackingObjectsNode
 sys.path.append(ament_index_python.packages.get_package_share_directory('common_pkg'))
 import carteav_log, service_client_util
 
@@ -22,12 +22,9 @@ class RecordedScenerioThread():
     # listen to ros
     def ros_spin(self):
         try:
-            # rclpy.spin(self.scenarios_node)
             if rclpy.ok():
                 rclpy.spin(self.scenarios_node)
-            # else:
-            #     print('ros not ok')
-            # rclpy.shutdown()
+          
         except Exception as e:
             errorstr = 'rclpy_spin_thread failed: ' + str(e)
             print(errorstr)

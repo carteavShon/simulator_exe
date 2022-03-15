@@ -5,11 +5,11 @@ from environs import Env
 import lgsvl
 from lgsvl.geometry import Spawn, Transform, Vector
 from scenarios_ros_thread import ScenariosRosThread
+import simulator_types
 import time
 from datetime import datetime
 
 from permutation_params import PermutationParams
-import simulator_types
 
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")

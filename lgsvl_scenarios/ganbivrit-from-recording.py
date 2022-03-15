@@ -10,8 +10,7 @@ import time
 import rclpy
 from recording_ros_tread import RecordedScenerioThread
 from scenarios_ros_thread import ScenariosRosThread
-from rosBag_scenerio import TrackingObjectsNode
-from temp import Recording 
+from tracking_node import TrackingObjectsNode
 from permutation_params import PermutationParams
 import simulator_types
 
@@ -81,30 +80,58 @@ while not ego.bridge_connected:
 
 print("Bridge connected:", ego.bridge_connected)
 
+## CONECTING TO MSG FROM ROS BAG
+
 ros_thread = RecordedScenerioThread()
 ros_thread.run()
+padastrians_list = [] 
 
-padastrians_list = []
+
+## CHECK FOR DUPLICATED PEDESTRIANS POSIBILITY 
+
+def containes_pedestrian(pedestrian1,pedestrian2):
+    if round(pedestrian1.position.z) == round(pedestrian2.transform.position.z) and round(pedestrian1.position.x) == round(pedestrian2.transform.position.x):
+        return True
+    return False
+
+## ADING PEDESTRIAN TO SIMULATOR
 
 def add_pedastrian(pedastrian):
     global padastrians_list
     ped_state = lgsvl.AgentState()
-    ped_state.transform = Transform(position=pedastrian.position , rotation=lgsvl.Vector(0,180,0))
+    ped_state.transform = Transform(position=pedastrian.position , rotation=lgsvl.Vector(0,270,0))
     ped = sim.add_agent(random.choice(simulator_types.pedestrian_types),lgsvl.AgentType.PEDESTRIAN,ped_state)
     padastrians_list.append(ped)
-    print("Created pedastrain at: z:" +str(pedastrian.position.z)+"--- Y:" +str(pedastrian.position.y))
+    print("Created pedastrain at: Z: " +str(pedastrian.position.z)+"--- X: " +str(pedastrian.position.x))
 
-while True:
+## CHECK TO SEE IF THE PEDESTRIANS LIST FROM ROS MSG HAS GROWN COMPARE TO UNITY PEDESTRIANS
+
+def pedestrians_list_changed(padastrians,msg_pedestrians):
+    if padastrians.__len__() != msg_pedestrians.__len__():
+        return True
+
+## HANDLE THE DATA COMING FROM OBJECT TRACKING NODE  
+
+def handle_pedestrians():
     for ped in ros_thread.scenarios_node.padastrians:
         contains = False
         if padastrians_list:
             for temp_ped in padastrians_list:   
-                if temp_ped.transform.position == ped.position:
+                if containes_pedestrian(ped,temp_ped):
                     contains =True
         else:
             add_pedastrian(ped)
             contains =True 
         if not contains:
             add_pedastrian(ped)
-    sim.run(0.1)
+
+
+while True:
+    if pedestrians_list_changed(padastrians_list,ros_thread.scenarios_node.padastrians):
+        handle_pedestrians()
+    else:
+        sim.run(0.5)
+
+
+
         

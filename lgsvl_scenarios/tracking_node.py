@@ -1,19 +1,12 @@
 #!/usr/bin/env python3
 
-import rclpy
 import lgsvl
 from rclpy.node import Node
 from carteav_interfaces.msg import MovingObjectTrackingList
 from rclpy.qos import QoSProfile, DurabilityPolicy, HistoryPolicy, ReliabilityPolicy
 from lgsvl.geometry import Spawn, Transform, Vector
-from temp import Recording
 
-# objects
-      
-# To Do for Wendsday :
-    # figure out isolating tracking object ID 
-    # create a sharable variable for simulator scenario
-    # add a subscriebr for cart loaction Node  
+
 
 padastrinas_list = [] 
 
@@ -22,7 +15,6 @@ class TrackingObjectsNode(Node):
         self.id_list = []
         self.padastrians = []
         self.obj_msg: MovingObjectTrackingList = MovingObjectTrackingList()
-        self.recording = Recording()
         besteffort_qos = QoSProfile(depth=1, reliability=ReliabilityPolicy.BEST_EFFORT,
                                     history=HistoryPolicy.KEEP_LAST, durability=DurabilityPolicy.VOLATILE)
         super().__init__("tracking_objects")
@@ -37,19 +29,25 @@ class TrackingObjectsNode(Node):
                     contains = True
                 else:
                     for ped in self.padastrians:
-                        if ped.id == msg.id and ped.position.x != msg.x : 
+                        if self.is_same_pedestrian(ped,msg): 
                             contains = True
                 if not contains:
                     self.handle_data(pedastrian(msg.x,msg.y,msg.z,msg.id))
                     self.id_list.append(msg.id)      
 
+    def is_same_pedestrian(self,pedestrian1,msg_ped):
+        if round(pedestrian1.position.z) == round(msg_ped.z) and round(pedestrian1.position.x) == round(msg_ped.x):
+            if(pedestrian1.id == msg_ped.id):
+                return True
+        return False   
+
     def handle_data(self,padastrian):
         global padastrinas_list
-        padastrinas_list = padastrian
         self.padastrians.append(padastrian)
+        padastrinas_list = padastrian
         #print("Pedestrains Position: X:" + str(padastrian.position.x)+" , Y:"+str(padastrian.position.y) + " Z:"+str(padastrian.position.z))
         #self.recording.get_obj_msg(self.padastrians)
-       
+    
     
 
 class pedastrian():
