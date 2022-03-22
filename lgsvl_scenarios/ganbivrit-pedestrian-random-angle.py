@@ -112,16 +112,16 @@ def drive_to_point():
         simulator_types.positions.dest_lat_lon_ganheb.longitude
     )
     for num in range(20):
-                if(ego.state.speed >2 ):
-                 angle = random.randint(int(ego.state.rotation.y -50), int(ego.state.rotation.y + 50)) 
-                else:
-                 angle = random.randint(int(ego.state.rotation.y -130), int(ego.state.rotation.y + 130))
+        if(ego.state.speed >2 ):
+            angle = random.randint(int(ego.state.rotation.y -50), int(ego.state.rotation.y + 50)) 
+        else:
+            angle = random.randint(int(ego.state.rotation.y -130), int(ego.state.rotation.y + 130))
 
-                if create_ped(ego.state,angle):
-                    print("Cart Speed in M/S: "+str(ego.state.speed)) 
-                else:
-                    break
-                sim.run(6)
+        if create_ped(ego.state,angle):
+            print("Cart Speed in M/S: "+str(ego.state.speed)) 
+        else:
+            break
+        sim.run(6)
 
  
 
