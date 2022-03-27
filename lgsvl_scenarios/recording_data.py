@@ -1,13 +1,7 @@
 #!/usr/bin/env python3
 import math
-from operator import contains
-import os
-import sys,ament_index_python
-from typing import List
-from warnings import catch_warnings
-from turtle import position
+import sys
 import lgsvl
-
 import datetime
 sys.path.append('/home/shon/git_repos/carteav_tools')
 from bags.bag2reader import *
@@ -24,12 +18,19 @@ class Pedestrian():
         self.remove = removeable
         self.index = 0
 
-print("Pleas Enter The Recording File Path: " )
-rec_dir = input() 
+# print("Pleas Enter The Recording File Path: " )
+# rec_dir = input() 
+rec_dir = '/home/shon/Videos/0037-cartbag-cart-1-23_1_22-10_5_34-Mission'
 print("\n Loading Data From File ... \n ")
-topics_dict = bag_to_dataframes(rec_dir, include_topics=[], verbose=False)
+topics_list = ['carteav_interfaces/msg/MovingObjectTrackingList','carteav_interfaces/msg/CartLocation' ]
+topics_dict = bag_to_dataframes(rec_dir, include_topics=[], verbose=True)
+
 print(" Loading Complete!")
-topics_dict['carteav_interfaces/msg/MovingObjectTrackingList']
+
+def get_cart_path_data(df):
+    data_dict = {datetime.datetime.fromtimestamp(row["timestamp"]//1000000000): row["msgs"] \
+                for index, row in df.iterrows()}
+    return data_dict
 
 def get_object_list_data(df):
     data_dict = {datetime.datetime.fromtimestamp(row["timestamp"]//1000000000): row["msgs"].objects \
@@ -54,13 +55,10 @@ tracking_obj_data = get_object_list_data(tracking_obj_df)
 
 ## CART LOCATION DATA FRAMES
 
-cart_location_df = topics_dict['carteav_interfaces/msg/CartLocation']
-cart_location_data = get_cart_location(cart_location_df)
-cart_yaw_data = get_cart_yaw(cart_location_df)
+#cart_location_df = topics_dict['carteav_interfaces/msg/CartLocation']
+#cart_location_data = get_cart_location(cart_location_df)
+#cart_yaw_data = get_cart_yaw(cart_location_df)
 
-def get_time_stamp():
-    for time_stamp,cart_location in cart_location_data.items():
-        return time_stamp.time()
 
 
 def get_cartlocation_at_timestamp(time):
@@ -82,7 +80,17 @@ def get_cart_yaw_at_timestamp(time):
     except:
         print("No Time Stamp Found ...")
 
+def get_cart_path_at_timeStamp():
+    for time_stamp , path in cart_path_data.items():
+        print(str(time_stamp.time()))
+        print(str())
 
+cart_path_df = topics_dict['carteav_interfaces/msg/CartPath']
+cart_path_data = get_cart_path_data(cart_path_df)
+
+
+# Checks to see if the pedestrian from the messeg has allredy been added to avoid duplication 
+# If it is the same than asign his new position as a walking waypoint 
 def is_same_pedestrian(pedestrian1: Pedestrian,msg_ped):
     # print("Ped X: " + str(round(pedestrian1.position.x)) + "    Msg X :"  + str(-round(msg_ped.x)))
     # print("Ped Z: " + str(round(pedestrian1.position.z)) + "    Msg Z :"  + str(-round(msg_ped.y))+"\n"+"------------")
@@ -99,12 +107,20 @@ pedestrians_list = []
 
 
 def get_pedestrains_from_timestamp(start_time):
+    '''
+    Colecting data each secound to get real time pedestrians position and behavior.
+
+    params: start_time => the start time-stamp (datetime) you wish to get data from.
+
+    *Function Must Be In a Loop*   
+    '''
+
     global pedestrians_list
     for time_stamp, objects_list in tracking_obj_data.items():
         if start_time.time() <= time_stamp.time() and time_stamp.time() <= (start_time + datetime.timedelta(0,1)).time():
             for obj_data in objects_list:
                 contains = False
-                if obj_data.object_type == 0:
+                if obj_data.object_type == 0: # Type = 0 means its a pedestrian
                     if not pedestrians_list:
                         pedestrians_list.append(Pedestrian(obj_data.x,obj_data.y,obj_data.z,obj_data.id,obj_data.heading,removeable=False))
                         contains =True
@@ -116,8 +132,9 @@ def get_pedestrains_from_timestamp(start_time):
                                 ped.remove = False
                             else:
                                 ped.remove = True
+                                
                     if not contains:
-                        pedestrians_list.append(Pedestrian(obj_data.x,obj_data.y,obj_data.z,obj_data.id,-obj_data.heading,removeable=False))
+                        pedestrians_list.append(Pedestrian(obj_data.x,obj_data.y,obj_data.z,obj_data.id,obj_data.heading,removeable=False))
         
     return pedestrians_list
                     

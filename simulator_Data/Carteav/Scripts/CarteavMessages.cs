@@ -16,9 +16,12 @@ namespace Carteav.Messages
     {
         public CartPointMessage[] points;
         public string path_id;
-        public uint path_length_m;
-        public uint path_duration_sec;
+        public UInt32 path_length_m;
+        public UInt32 path_duration_sec;
         public bool cyclic;
+        public string dest_name;
+        public byte dest_counter;
+        public byte dest_limit;
     }
     
     [MessageType("carteav_interfaces/CartPoint")]
@@ -29,8 +32,8 @@ namespace Carteav.Messages
         public double req_velocity_mps;
         public Int16 current_eta_sec;
         public bool is_crosswalk;
-        public bool is_junction;
-        public bool is_speed_bumpsgoogle;
+        public Int16 cross_junction_id;
+        public bool is_speed_bumps;
     }
 
     
@@ -76,16 +79,16 @@ namespace Carteav.Messages
     }
     
     
-    
-    
-    
     public class CartPath
     {
         public List<CartPoint> Points;
         public string PathId;
-        public uint PathLengthM;
-        public uint PathDurationSec;
+        public UInt32 PathLengthM;
+        public UInt32 PathDurationSec;
         public bool Cyclic;
+        public string DestName;
+        public byte DestCount;
+        public byte DestLimiter;
 
         public CartPath(CartPathMessage pathMessage)
         {
@@ -94,6 +97,9 @@ namespace Carteav.Messages
             PathLengthM = pathMessage.path_length_m;
             PathDurationSec = pathMessage.path_duration_sec;
             Cyclic = pathMessage.cyclic;
+            DestName = pathMessage.dest_name;
+            DestCount = pathMessage.dest_counter;
+            DestLimiter =pathMessage.dest_limit;
         }
     }
 
@@ -104,8 +110,8 @@ namespace Carteav.Messages
         public double ReqVelocityMps;
         public Int16 CurrentEtaSec;
         public bool IsCrosswalk;
-        public bool IsJunction;
-        public bool IsSpeedBumpsgoogle;
+        public Int16 JunctionId;
+        public bool IsSpeedBumps;
 
         public CartPoint(CartPointMessage pointMessageStruct)
         {
@@ -116,8 +122,8 @@ namespace Carteav.Messages
             ReqVelocityMps = pointMessageStruct.req_velocity_mps;
             CurrentEtaSec = pointMessageStruct.current_eta_sec;
             IsCrosswalk = pointMessageStruct.is_crosswalk;
-            IsJunction = pointMessageStruct.is_junction;
-            IsSpeedBumpsgoogle = pointMessageStruct.is_speed_bumpsgoogle;
+            JunctionId = pointMessageStruct.cross_junction_id;
+            IsSpeedBumps = pointMessageStruct.is_speed_bumps;
         }
     }
 
