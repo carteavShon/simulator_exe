@@ -10,5 +10,6 @@
         "/home/shon/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages",
         "/home/shon/git_repos/carteav_sw/carteav_dev/install/lib/python3.8/site-packages",
         "/opt/ros/galactic/lib/python3.8/site-packages"
-    ]
+    ],
+    "ros.distro": "galactic"
 }

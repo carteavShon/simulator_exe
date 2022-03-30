@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import datetime
+from geometry_msgs.msg import Point
 from genericpath import exists
 from operator import index
 import random
@@ -9,8 +10,10 @@ import recording_data
 from lgsvl.geometry import Transform
 import simulator_types
 from sim_start import LounchSimulator
+import geo_converter
  
 # A bridge class between RosBag pedestrian Data and Lgsvl Pedestrian Data
+
 class SimPedestrian:
     def __init__(self,pedestrian,id,index):
         self.pedestrian = pedestrian 
@@ -22,20 +25,35 @@ def convert(date_time):
     datetime_str = datetime.datetime.strptime(date_time, format) 
     return datetime_str
 
-recording_data.get_cart_path_at_timeStamp()
+def convert_sim_point(sim_point):
+    world_point = Point()
+    world_point.x = float(-sim_point.x)
+    world_point.y = float(-sim_point.z)
+    world_point.z = float(sim_point.y)
+    return world_point
+
+#recording_data.get_cart_path_at_timeStamp()
 #time_stamp = convert(input("Enter a time stamp '(H:M:S)': "))
-time_stamp = convert("10:05:52")
-#cart_position = recording_data.get_cartlocation_at_timestamp(time_stamp.time())
-#cart_rotation = recording_data.get_cart_yaw_at_timestamp(time_stamp.time())
+time_stamp = convert("15:17:23")
+cart_position = recording_data.get_cartlocation_at_timestamp(time_stamp.time())
+cart_rotation = recording_data.get_cart_yaw_at_timestamp(time_stamp.time())
 
-#print( "Cart created at: "+ str(cart_position))
-#print(str(cart_rotation))
+print( "Cart created at: "+ str(cart_position))
+print(str(cart_rotation))
 
-simulator = LounchSimulator("Test",simulator_types.map_types.GanBIvrit,lgsvl.Vector(873.2811821229207,0,4839.198329100608),lgsvl.Vector(0,70,0))
+cart_location_converted = convert_sim_point(cart_position)
+cart_geo_location = recording_data.point_local2geo(cart_location_converted)
+cart_dest = recording_data.get_cart_path()
+print(str(cart_geo_location))
+#print(str(cart_dest))
+
+simulator = LounchSimulator("Test",simulator_types.map_types.GanBIvrit,cart_position,lgsvl.Vector(0,70,0))
 
 existed_pedestrains = []
 
 pedestrian_index =-1
+
+simulator.ros_thread.send_drive_to_point(cart_location_converted.y,cart_location_converted.x,cart_dest.y,cart_dest.x)
 
 while True:
     
@@ -71,6 +89,6 @@ while True:
                     pedestrian.pedestrian.follow(msg_ped.wp_list)
                     msg_ped.wp_list.clear()
 
-    time_stamp += datetime.timedelta(0,0.5)
-    simulator.sim.run(0.5)
+    time_stamp += datetime.timedelta(0,0.2)
+    simulator.sim.run(0.2)
 

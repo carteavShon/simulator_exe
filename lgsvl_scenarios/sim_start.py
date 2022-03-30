@@ -25,8 +25,8 @@ class LounchSimulator():
         vehicle=simulator_types.ego_types.DefaultType
         print('Vehicle: ' + vehicle.name + ' - ' + vehicle.value)
 
-        ros_thread = ScenariosRosThread()
-        ros_thread.run(self.scenario_name)
+        self.ros_thread = ScenariosRosThread()
+        self.ros_thread.run(self.scenario_name)
 
         env = Env()
         self.sim = lgsvl.Simulator(env.str("LGSVL__SIMULATOR_HOST", lgsvl.wise.SimulatorSettings.simulator_host), env.int("LGSVL__SIMULATOR_PORT", lgsvl.wise.SimulatorSettings.simulator_port))
