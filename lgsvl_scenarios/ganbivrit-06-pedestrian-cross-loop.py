@@ -6,10 +6,11 @@ import lgsvl
 from lgsvl.geometry import Spawn, Transform, Vector
 import random
 import time
-
 from permutation_params import PermutationParams
 import simulator_types
-from scenarios_ros_thread import ScenariosRosThread 
+from scenarios_ros_thread import ScenariosRosThread
+
+cordinates = simulator_types.ganBivrit_spawn_cordinates
 
 scenario_num = 6
 scenario_name = "Pedestrian crosses the road"
