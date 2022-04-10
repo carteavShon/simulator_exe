@@ -1,16 +1,13 @@
 # ------ Carteav Simulator 2022 ------ 
 
-## !!-- BEFORE YOU CLONE !!---- you'll need to to have GIT LFS install on your machine
- 
-### Installing Git LFS
-Git LFS requires Git version 1.8.2 or later to be installed.
-Download and install the Git LFS: [Download-Link](https://github.com/git-lfs/git-lfs/releases/download/v3.0.2/git-lfs-linux-amd64-v3.0.2.tar.gz). 
+## !!-- Instalation Guid !!---- 
 
-Once git-lfs is installed, run:
-git lfs install
+### Steps:
 
-and then clone as you normaly do 
-
-### for the first Run its Best if you Start the simulator NOT from the Api , so that the maps and vichels Assets will be installed from the cloud.
-
-### inside the the simulator there is an updated Lgsvl_Scenarios folder. make sure you run the api from there   
+#### 1. Fork this repasitory.
+#### 2. Go in to the forked repositiry in your acount. 
+#### 3. Click on settings.
+#### 4. Search for " Git LFS " checkbox and mark it as Checked.
+#### 5. Scroll all the way down to the red "Danger Zone" and *Archive* the repository
+#### 6. return to your repository and downlaod it as a ZIP File 
+#### 7. UnZip the file and the simulator and it should work 
