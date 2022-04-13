@@ -2,6 +2,7 @@
 import math
 from os import remove
 import sys
+from typing import List
 import lgsvl
 from geo_converter import geo_converter_instance, geoConverter
 import datetime
@@ -13,7 +14,7 @@ class Pedestrian():
         self.position = lgsvl.Vector(-x,0,-y)
         self.id = id
         y = math.degrees(heading)
-        angle = (((-y)*(-33.013378086))%360)
+        angle = (((-y)*(0.466))%360)
         self.heading = lgsvl.Vector(0,math.degrees(angle),0)
         self.wp_list = []
         self.created = False
@@ -50,23 +51,16 @@ def get_cart_yaw(df):
                 for index, row in df}
     return data_dict
 
+## CART LOCATION DATA FRAMES
 cart_location_df=bagparser.get_messages("/cart_location")
 cart_location_data = get_cart_location(cart_location_df)
 cart_yaw_data = get_cart_yaw(cart_location_df)
 cart_path_data = bagparser.get_messages("/cart_path")
-tracking_obj_data = get_object_list_data(bagparser.get_messages("/tracking_objects"))
-
-print(" Loading Complete!")
-
 
 ## TRACKED OBJECT DATA FRAMES
+tracking_obj_data = get_object_list_data(bagparser.get_messages("/tracking_objects"))
 
-
-
-## CART LOCATION DATA FRAMES
-
-
-
+print("Loading Complete!\n")
 
 def get_cartlocation_at_timestamp(time):
     try:
@@ -80,9 +74,9 @@ def get_cart_yaw_at_timestamp(time):
     try:
         for time_stamp , yaw in cart_yaw_data.items():
             if time == time_stamp.time():
-                linear_transform = 33.013378086
+                linear_transform = 0.466
                 y = math.degrees(yaw)
-                angle = (((-y)*(-linear_transform))%360)
+                angle = (((-y)*(-linear_transform)))
                 return lgsvl.Vector(0,angle,0)
     except:
         print("No Time Stamp Found ...")
@@ -110,10 +104,7 @@ def point_local2geo(point):
 # If it is the same than asign his new position as a walking waypoint 
 
 def is_same_pedestrian(pedestrian1: Pedestrian,msg_ped):
-    # print("Ped X: " + str(round(pedestrian1.position.x)) + "    Msg X :"  + str(-round(msg_ped.x)))
-    # print("Ped Z: " + str(round(pedestrian1.position.z)) + "    Msg Z :"  + str(-round(msg_ped.y))+"\n"+"------------")
-
-    if (round(pedestrian1.position.z) == -math.ceil(msg_ped.y) or math.ceil(pedestrian1.position.x) == -round(msg_ped.x)) and pedestrian1.id == msg_ped.id:
+    if (round(pedestrian1.position.z) == -math.ceil(msg_ped.y) or math.ceil(pedestrian1.position.x) == -round(msg_ped.x)) or pedestrian1.id == msg_ped.id:
         if pedestrian1.id == msg_ped.id:
             if pedestrian1.wp_list:
                 pedestrian1.wp_list.clear()
@@ -123,9 +114,17 @@ def is_same_pedestrian(pedestrian1: Pedestrian,msg_ped):
 
 pedestrians_list = []
 
+def is_removeable(pedestrian_list:List , msg_pedestrian_list):
+    for msg_ped in msg_pedestrian_list:
+        for ped in pedestrian_list:
+            if msg_ped.id == ped.id:
+                ped.remove = False
+            else:
+                ped.remove = True
 
 
 def get_pedestrains_from_timestamp(start_time):
+
     '''
     Colecting data each secound to get real time pedestrians position and behavior.
 
@@ -135,27 +134,30 @@ def get_pedestrains_from_timestamp(start_time):
     '''
 
     global pedestrians_list
+    msg_pedestrian_list = []
 
     for time_stamp, objects_list in tracking_obj_data.items():
         if start_time.time() <= time_stamp.time() and time_stamp.time() <= (start_time + datetime.timedelta(0,1)).time():
             for obj_data in objects_list:
-                toDelete = True
-                contains = False
                 if obj_data.object_type == 0: # Type = 0 means its a pedestrian
-                    if not pedestrians_list:
-                        pedestrians_list.append(Pedestrian(obj_data.x,obj_data.y,obj_data.z,obj_data.id,obj_data.heading,toDelete))
-                        contains =True
-                    else:
-                        for ped in pedestrians_list:
-                            if is_same_pedestrian(ped,obj_data):
-                                contains = True
-                            if ped.id == obj_data.id:
-                                toDelete = False
-                                ped.remove = False
+                    msg_pedestrian_list.append(obj_data)
+                    
+    for obj_data in msg_pedestrian_list:
+        contains = False
 
-                                
-                    if not contains:
-                        pedestrians_list.append(Pedestrian(obj_data.x,obj_data.y,obj_data.z,obj_data.id,obj_data.heading,toDelete))
-        
+        if not pedestrians_list:
+            pedestrians_list.append(Pedestrian(obj_data.x,obj_data.y,obj_data.z,obj_data.id,obj_data.heading,removeable=True))
+            contains =True
+
+        else:
+            for ped in pedestrians_list:
+                if is_same_pedestrian(ped,obj_data):
+                    contains = True  
+
+        if not contains:
+            pedestrians_list.append(Pedestrian(obj_data.x,obj_data.y,obj_data.z,obj_data.id,obj_data.heading,removeable=True))
+    
+    is_removeable(pedestrians_list,msg_pedestrian_list)
+
     return pedestrians_list
                     

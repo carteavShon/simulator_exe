@@ -1,0 +1,606 @@
+[0.123s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/shon/git_repos/simulator_exe']
+[0.123s] DEBUG:colcon:Parsed command line arguments: Namespace(base_paths=['/home/shon/git_repos/simulator_exe'], build_base='build', ignore_user_meta=False, log_base=None, log_level=None, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7f968773a8b0>>, metas=['./colcon.meta'], names_only=False, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, paths=None, paths_only=True, topological_graph=False, topological_graph_density=False, topological_graph_dot=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, topological_graph_legend=False, topological_order=False, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7f968773a8b0>, verb_name='list', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f968763d4f0>)
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.162s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/shon/git_repos/simulator_exe'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extension 'ros'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extensions ['cmake', 'python']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extension 'cmake'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extension 'python'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extensions ['python_setup_py']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe) by extension 'python_setup_py'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extension 'ros'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extensions ['cmake', 'python']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extension 'cmake'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extension 'python'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extensions ['python_setup_py']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles) by extension 'python_setup_py'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extension 'ros'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extensions ['cmake', 'python']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extension 'cmake'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extension 'python'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extensions ['python_setup_py']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Bridges) by extension 'python_setup_py'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extension 'ros'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extensions ['cmake', 'python']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extension 'cmake'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extension 'python'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extensions ['python_setup_py']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Controllables) by extension 'python_setup_py'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extension 'ros'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extensions ['cmake', 'python']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extension 'cmake'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extension 'python'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extensions ['python_setup_py']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Environments) by extension 'python_setup_py'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extension 'ros'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extensions ['cmake', 'python']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extension 'cmake'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extension 'python'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extensions ['python_setup_py']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs) by extension 'python_setup_py'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extensions ['cmake', 'python']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extension 'cmake'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extension 'python'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extensions ['python_setup_py']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/CartNPC) by extension 'python_setup_py'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extensions ['cmake', 'python']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/NPCs/DefaultNPC) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians) by extension 'python_setup_py'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extension 'ros'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extensions ['cmake', 'python']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extension 'cmake'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extension 'python'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extensions ['python_setup_py']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Pedestrians/Walkers) by extension 'python_setup_py'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Sensors) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extension 'ros'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extensions ['cmake', 'python']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extension 'cmake'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extension 'python'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extensions ['python_setup_py']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/AssetBundles/Vehicles) by extension 'python_setup_py'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extension 'ros'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/__pycache__) by extension 'python_setup_py'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/log) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/log) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/lgsvl_scenarios/log) ignored
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/log) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/log) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/log) ignored
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extension 'ros'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extensions ['cmake', 'python']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extension 'cmake'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extension 'python'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extensions ['python_setup_py']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data) by extension 'python_setup_py'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extension 'ros'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extensions ['cmake', 'python']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extension 'cmake'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extension 'python'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extensions ['python_setup_py']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav) by extension 'python_setup_py'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extensions ['ros']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extension 'ros'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extensions ['cmake', 'python']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extension 'cmake'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extension 'python'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extensions ['python_setup_py']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Prefabs) by extension 'python_setup_py'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extension 'ros'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extensions ['cmake', 'python']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extension 'cmake'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extension 'python'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extensions ['python_setup_py']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources) by extension 'python_setup_py'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extension 'ros'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extensions ['cmake', 'python']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extension 'cmake'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extension 'python'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extensions ['python_setup_py']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Angles) by extension 'python_setup_py'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extension 'ros'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extensions ['cmake', 'python']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extension 'cmake'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extension 'python'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extensions ['python_setup_py']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Materials) by extension 'python_setup_py'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extension 'ros'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extensions ['cmake', 'python']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extension 'cmake'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extension 'python'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extensions ['python_setup_py']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures) by extension 'python_setup_py'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extension 'ros'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extensions ['cmake', 'python']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extension 'cmake'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extension 'python'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extensions ['python_setup_py']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Grass 05) by extension 'python_setup_py'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extension 'ros'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extensions ['cmake', 'python']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extension 'cmake'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extension 'python'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extensions ['python_setup_py']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/Ground & rocks 03) by extension 'python_setup_py'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extension 'ros'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extensions ['cmake', 'python']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extension 'cmake'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extension 'python'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extensions ['python_setup_py']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Resources/Textures/roads) by extension 'python_setup_py'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extension 'ros'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extensions ['cmake', 'python']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extension 'cmake'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extension 'python'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extensions ['python_setup_py']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts) by extension 'python_setup_py'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts/log) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts/log) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Carteav/Scripts/log) ignored
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extension 'ros'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extensions ['cmake', 'python']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extension 'cmake'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extension 'python'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extensions ['python_setup_py']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Managed) by extension 'python_setup_py'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extension 'ros'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extensions ['cmake', 'python']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extension 'cmake'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extension 'python'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extensions ['python_setup_py']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge) by extension 'python_setup_py'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extension 'ignore_ament_install'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extensions ['colcon_pkg']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extension 'colcon_pkg'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extension 'ros'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extensions ['cmake', 'python']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extension 'cmake'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extension 'python'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extensions ['python_setup_py']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc) by extension 'python_setup_py'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extensions ['ignore', 'ignore_ament_install']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extension 'ignore'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extension 'ignore_ament_install'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extensions ['colcon_pkg']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extension 'colcon_pkg'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extensions ['colcon_meta']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extension 'colcon_meta'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extensions ['ros']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extension 'ros'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extensions ['cmake', 'python']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extension 'cmake'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extension 'python'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extensions ['python_setup_py']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono) by extension 'python_setup_py'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'ignore'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'ignore_ament_install'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extensions ['colcon_pkg']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'colcon_pkg'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extensions ['colcon_meta']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'colcon_meta'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extensions ['ros']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'ros'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extensions ['cmake', 'python']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'cmake'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'python'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extensions ['python_setup_py']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0) by extension 'python_setup_py'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extensions ['colcon_pkg']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'colcon_pkg'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extensions ['colcon_meta']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'colcon_meta'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extensions ['ros']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'ros'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extensions ['cmake', 'python']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'cmake'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'python'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extensions ['python_setup_py']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/2.0/Browsers) by extension 'python_setup_py'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'python'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extensions ['python_setup_py']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0) by extension 'python_setup_py'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'ros'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extensions ['cmake', 'python']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'cmake'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'python'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extensions ['python_setup_py']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.0/Browsers) by extension 'python_setup_py'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'colcon_meta'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'ros'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extensions ['cmake', 'python']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'cmake'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'python'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extensions ['python_setup_py']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5) by extension 'python_setup_py'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'ignore_ament_install'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'ros'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extensions ['cmake', 'python']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'cmake'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'python'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extensions ['python_setup_py']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/4.5/Browsers) by extension 'python_setup_py'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'ros'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extensions ['cmake', 'python']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'cmake'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'python'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extensions ['python_setup_py']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/etc/mono/mconfig) by extension 'python_setup_py'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/MonoBleedingEdge/x86_64) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extension 'ros'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extensions ['cmake', 'python']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extension 'cmake'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extension 'python'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extensions ['python_setup_py']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Plugins) by extension 'python_setup_py'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extension 'ros'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extensions ['cmake', 'python']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extension 'cmake'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extension 'python'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extensions ['python_setup_py']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_Data/Resources) by extension 'python_setup_py'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extension 'ros'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extensions ['cmake', 'python']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extension 'cmake'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extension 'python'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extensions ['python_setup_py']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git) by extension 'python_setup_py'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extension 'ros'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extensions ['cmake', 'python']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extension 'cmake'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extension 'python'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extensions ['python_setup_py']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/hooks) by extension 'python_setup_py'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extension 'ros'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extensions ['cmake', 'python']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extension 'cmake'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extension 'python'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extensions ['python_setup_py']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/shon/git_repos/simulator_exe/simulator_exe.git/info) by extension 'python_setup_py'
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

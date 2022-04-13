@@ -10,12 +10,14 @@ from permutation_params import PermutationParams
 from datetime import datetime
 
 class LounchSimulator():
-    def __init__(self,scenario_name,scene,cart_position,cart_rotation):
+
+    def __init__(self,scenario_name,scene,cart_position =lgsvl.Vector(731,0,4846) ,cart_rotation=lgsvl.Vector(0,180,0)):
+
         self.scenario_name = scenario_name
         self.scene = scene
-        self.car_position =cart_position
-        self.car_position =cart_position
-        self.cart_rotation= cart_rotation
+        self.car_position = cart_position
+        self.car_position = cart_position
+        self.cart_rotation = cart_rotation
 
         now = datetime.now()
         current_time = now.strftime("%H:%M:%S")
@@ -25,11 +27,9 @@ class LounchSimulator():
         vehicle=simulator_types.ego_types.DefaultType
         print('Vehicle: ' + vehicle.name + ' - ' + vehicle.value)
 
-        self.ros_thread = ScenariosRosThread()
-        self.ros_thread.run(self.scenario_name)
 
-        env = Env()
-        self.sim = lgsvl.Simulator(env.str("LGSVL__SIMULATOR_HOST", lgsvl.wise.SimulatorSettings.simulator_host), env.int("LGSVL__SIMULATOR_PORT", lgsvl.wise.SimulatorSettings.simulator_port))
+        self.env = Env()
+        self.sim = lgsvl.Simulator(self.env.str("LGSVL__SIMULATOR_HOST", lgsvl.wise.SimulatorSettings.simulator_host), self.env.int("LGSVL__SIMULATOR_PORT", lgsvl.wise.SimulatorSettings.simulator_port))
 
         if self.sim.current_scene == self.scene.value:
             self.sim.reset()
@@ -40,19 +40,23 @@ class LounchSimulator():
         ego_state.transform = Transform(position = self.car_position, 
                                             rotation = self.cart_rotation)
 
-        forward = lgsvl.utils.transform_to_forward(ego_state)
-        right = lgsvl.utils.transform_to_right(ego_state)
 
-        ego = self.sim.add_agent(vehicle.value,lgsvl.AgentType.EGO,ego_state)
+        self.ego = self.sim.add_agent(vehicle.value,lgsvl.AgentType.EGO,ego_state)
+        
+        self.ros_thread = ScenariosRosThread()
+        self.ros_thread.run(self.scenario_name)
 
-        ego.connect_bridge(env.str("LGSVL_AUTOPILOT_0_HOST",lgsvl.wise.SimulatorSettings.bridge_host),env.int("LGSVL_AUTOPILOT_0_PORT",lgsvl.wise.SimulatorSettings.bridge_port))
+        self.ego.connect_bridge(self.env.str("LGSVL_AUTOPILOT_0_HOST",lgsvl.wise.SimulatorSettings.bridge_host),self.env.int("LGSVL_AUTOPILOT_0_PORT",lgsvl.wise.SimulatorSettings.bridge_port))
 
         print("Waiting For Connection ...")
 
-        while not ego.bridge_connected:
+        while not self.ego.bridge_connected:
             time.sleep(1)
 
-        print("Bridge connected:", ego.bridge_connected)
+        print("Bridge connected:", self.ego.bridge_connected)
+
+
+        
 
 
 
