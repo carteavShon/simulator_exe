@@ -23,8 +23,8 @@ class Pedestrian():
 
 # print("Pleas Enter The Recording File Path: " )
 # rec_dir = input() 
-rec_dir = '/home/shon/Videos/0015-cartbag-cart-1-28_3_22-15_17_9-Mission/0015-cartbag-cart-1-28_3_22-15_17_9-Mission_0.db3'
-
+rec_dir =input("\nEnter recorded file full path:")
+print("")
 print("\n Loading Data From File ... \n ")
 
 bagparser = BagFileParser(rec_dir)

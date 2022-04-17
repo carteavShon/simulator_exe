@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from scenarios_node import EnumDriveToDestResult, ScenariosNode
 import simulator_types
 import lgsvl
 import sim_start
@@ -11,26 +12,28 @@ def convert_sim_point(sim_point):
     world_point.z = float(sim_point.y)
     return world_point
 
-simulator = sim_start.LounchSimulator("Multi Mission",simulator_types.map_types.GanBIvrit)
-cart_local_position = simulator_types.point_local2geo(simulator.ego.transform.position)
+simulator = sim_start.LounchSimulator("Multi Mission")
 #destination_unity = simulator_types.point_geo2local(lgsvl.Vector(559,0,4780))
-print(str(cart_local_position))
-def cart_drive():
+
+def cart_drive_to(destination):
+    cart_local_position = simulator_types.point_local2geo(simulator.ego.transform.position)
     simulator.ros_thread.send_drive_to_point(
         cart_local_position.y,
         cart_local_position.x,
-        simulator_types.parking2["lat"],
-        simulator_types.parking2["lon"])
+        destination["lat"],
+        destination["lon"])
 
-cart_drive()
+print("Cart Rotation: " + str(simulator.ego.transform.rotation.y))
+cart_drive_to(simulator_types.poi_list[0])
+i=1
 
 while True:
-    if round(simulator.ego.transform.position.x) == 669 or round(simulator.ego.transform.position.z) == 4780 :
-        cart_local_position = simulator_types.point_local2geo(simulator.ego.transform.position)
-        simulator.ros_thread.send_drive_to_point(
-                cart_local_position.y,
-                cart_local_position.x,
-                simulator_types.westGate["lat"],
-                simulator_types.westGate["lon"])
+    if simulator.ros_thread.scenarios_node.drive_to_dest_result == EnumDriveToDestResult.FINISHED :
+        simulator.sim.run(2)
+        simulator.ros_thread.scenarios_node.drive_to_dest_result = EnumDriveToDestResult.INIT
+        simulator.sim.run(1)
+        cart_drive_to(simulator_types.poi_list[i])
+        print("Cart Rotation: " + str(simulator.ego.transform.rotation.y))
+        i+=1
     simulator.sim.run(1)
 #simulator.ros_thread.send_drive_to_point()

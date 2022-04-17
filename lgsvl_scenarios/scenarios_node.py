@@ -114,9 +114,9 @@ class ScenariosNode(Node):
         request.source_point = Point(x=lon1, y=lat1)
         # Todo: get from location the yaw:
         print("\n"+str(self.cart_status.cart_location.cart_yaw)+"\n")
-        print("\n"+str((math.degrees(self.cart_status.cart_location.cart_yaw)))+"\n")
+        print("\n"+str((math.degrees(self.cart_status.cart_location.cart_yaw)-90))+"\n")
 
-        request.source_azimuth = ((math.degrees(self.cart_status.cart_location.cart_yaw)))
+        request.source_azimuth =(math.degrees(self.cart_status.cart_location.cart_yaw)-90)
         request.destination_point = Point(x=lon2, y=lat2)
         request.calculate_critiria = CalculatePath.Request.SHORTEST_PATH_CRITERIA
 

@@ -11,7 +11,7 @@ from datetime import datetime
 
 class LounchSimulator():
 
-    def __init__(self,scenario_name,scene,cart_position =lgsvl.Vector(731,0,4846) ,cart_rotation=lgsvl.Vector(0,180,0)):
+    def __init__(self,scenario_name,scene = simulator_types.map_types.GanBIvrit ,cart_position =lgsvl.Vector(731,0,4846) ,cart_rotation=lgsvl.Vector(0,180,0)):
 
         self.scenario_name = scenario_name
         self.scene = scene
@@ -43,9 +43,10 @@ class LounchSimulator():
 
         self.ego = self.sim.add_agent(vehicle.value,lgsvl.AgentType.EGO,ego_state)
         
+
         self.ros_thread = ScenariosRosThread()
         self.ros_thread.run(self.scenario_name)
-
+        self.sim.run(1)
         self.ego.connect_bridge(self.env.str("LGSVL_AUTOPILOT_0_HOST",lgsvl.wise.SimulatorSettings.bridge_host),self.env.int("LGSVL_AUTOPILOT_0_PORT",lgsvl.wise.SimulatorSettings.bridge_port))
 
         print("Waiting For Connection ...")

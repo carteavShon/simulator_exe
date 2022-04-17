@@ -34,20 +34,18 @@ def convert_sim_point(sim_point):
     return world_point
 
 time_stamp=convert(input("Select Time Stemp (format = H:M:S): "))
-#time_stamp = convert("15:17:24")
+
 cart_position = recording_data.get_cartlocation_at_timestamp(time_stamp.time())
 cart_rotation = recording_data.get_cart_yaw_at_timestamp(time_stamp.time())
 
 print("Cart created at: "+ str(cart_position))
-print(str(cart_rotation))
+print("Cart Rotation angle: " + str(cart_rotation))
 
 cart_location_converted = convert_sim_point(cart_position)
 cart_geo_location = recording_data.point_local2geo(cart_location_converted)
 cart_dest = recording_data.get_cart_path()
-print(str(cart_geo_location))
-#print(str(cart_dest))
 
-simulator = LounchSimulator("Test",simulator_types.map_types.GanBIvrit,cart_position,cart_rotation)
+simulator = LounchSimulator("Ros Bag Scenerio",simulator_types.map_types.GanBIvrit,cart_position,cart_rotation)
 
 existed_pedestrains = []
 

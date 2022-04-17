@@ -50,7 +50,7 @@ class map_types(Enum):
 parking1 = dict({"lon":34.8265818,"lat":31.9651178})
 parking2 = dict({"lon":34.8260782,"lat":31.9656669})
 lettersPuzzel = dict({"lon":34.8263164,"lat":31.9649525})
-waterCircle = dict({"lon":34.8255831,"lon":31.9657457})
+waterCircle = dict({"lon":34.8255831,"lat":31.9657457})
 westGate = dict({"lon": 34.82465315,"lat":31.96559413})
 westGate2 = dict({"lon": 34.82446041,"lat":31.96554187})
 backRoad = dict({"lon": 34.82617902,"lat":31.96468383})
@@ -59,6 +59,8 @@ backEntrance = dict({"lon": 34.8258718,"lat":31.9634080})
 playYard = dict({"lon":34.8267078,"lat":31.9636308})
 playYardBack = dict({"lon":34.8268809,"lat":31.9633875})
 GanSipurCoffee =dict({"lon":34.8267438,"lat":31.9640471})
+
+poi_list = [westGate,backRoad,maze,playYardBack,GanSipurCoffee,parking1]
 
 # ---------------------------------
 
