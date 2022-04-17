@@ -1,14 +1,3 @@
-{
-    "python.autoComplete.extraPaths": [
-        "/home/shon/git_repos/carteav_sw/carteav_infra/install/lib/python3.8/site-packages",
-        "/home/shon/git_repos/carteav_sw/carteav_dev/install/lib/python3.8/site-packages",
-        "/home/shon/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages",
-        "/opt/ros/galactic/lib/python3.8/site-packages"
-    ],
-    "python.analysis.extraPaths": [
-        "/home/shon/git_repos/carteav_sw/carteav_infra/install/lib/python3.8/site-packages",
-        "/home/shon/git_repos/carteav_sw/carteav_dev/install/lib/python3.8/site-packages",
-        "/home/shon/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages",
-        "/opt/ros/galactic/lib/python3.8/site-packages"
-    ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3aab9f609d223d442320a08364c0f891e751c1adc128150d77d6b0773f05b050
+size 724

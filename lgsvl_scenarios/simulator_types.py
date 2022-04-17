@@ -13,7 +13,8 @@ vehicle_types = [
         "SUV",
         "Jeep",
         #"SchoolBus",
-        "Hatchback"]
+        "Hatchback",
+        "ClubCart"]
 
 pedestrian_types = [
         "Bill",

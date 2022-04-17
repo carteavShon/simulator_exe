@@ -27,6 +27,13 @@ print("Cart Rotation: " + str(simulator.ego.transform.rotation.y))
 cart_drive_to(simulator_types.poi_list[0])
 i=1
 
+simulator.sim.add_random_agents(lgsvl.AgentType.PEDESTRIAN)
+
+npc_state = lgsvl.AgentState()
+npc_state.transform = lgsvl.Transform(position= lgsvl.Vector(735,0,4850),rotation=lgsvl.Vector(0,180,0))
+npc = simulator.sim.add_agent("Pc4Cart", lgsvl.AgentType.NPC,npc_state)
+
+
 while True:
     if simulator.ros_thread.scenarios_node.drive_to_dest_result == EnumDriveToDestResult.FINISHED :
         simulator.sim.run(2)

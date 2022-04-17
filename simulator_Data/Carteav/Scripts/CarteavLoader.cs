@@ -1,21 +1,3 @@
-﻿using UnityEngine;
-
-public class CarteavLoader : MonoBehaviour
-{
-    public string Address { get; private set; }
-    void Awake()
-    {
-        var others = FindObjectsOfType<CarteavLoader>();
-        if (others.Length > 1)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        DontDestroyOnLoad(gameObject);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:196eae1ab980dcc6d717fb3ceec75ec6cfab1873871834ad5fd49015d383c7bb
+size 436
